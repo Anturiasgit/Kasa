@@ -1,0 +1,27 @@
+header {
+  display: flex;
+  position: absolute;
+  top: 40px;
+  left: 100px;
+
+  img {
+    width: 200px;
+    height: 70px;
+    margin-right: 700px;
+  }
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    font-size: 22.5px;
+    font-family: 'Montserrat', sans-serif;
+
+    #accueil {
+      margin-right: 50px;
+    }
+
+    a {
+      font-weight: 400;
+    }
+  }
+}
