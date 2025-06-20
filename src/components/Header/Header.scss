@@ -7,21 +7,20 @@ header {
   img {
     width: 200px;
     height: 70px;
-    margin-right: 700px;
+    margin-right: 680px;
   }
 
   ul {
     list-style-type: none;
     display: flex;
     font-size: 22.5px;
-    font-family: 'Montserrat', sans-serif;
 
     #accueil {
       margin-right: 50px;
     }
 
     a {
-      font-weight: 400;
+      color: black;
     }
   }
 }
