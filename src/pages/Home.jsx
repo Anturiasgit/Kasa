@@ -1,14 +1,11 @@
-import Banner from '../components/Banner';
-import Card from '../components/Card';
+import Banner from '../components/Banner/Banner';
+import Card from '../components/Card/Card';
 // Tu importeras ensuite tes données si tu en as (JSON ou API)
 
 function Home() {
   return (
     <div>
-      <Banner
-        image="/images/banner.jpg"
-        text="Chez vous, partout et ailleurs"
-      />
+      <Banner />
 
       <section className="cards-container">
         <Card title="Titre de la location" image="/images/1.jpg" />

@@ -1,18 +1,16 @@
 footer {
-    position: absolute;
-    bottom: 0;
-    height: 200px;
-    width: 100%;
-    left: 0;
-    background-color: black;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
 
-    img {
-        margin-top: 65px;
-        margin-bottom: 5px;
-    }
+  img {
+    margin-top: 65px;
+    margin-bottom: 5px;
+  }
 
-    p {
-        font-size: 22.5px;
-        color: white;
-    }
+  p {
+    font-size: 22.5px;
+  }
 }
