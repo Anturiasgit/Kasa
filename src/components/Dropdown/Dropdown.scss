@@ -1,0 +1,31 @@
+.dropdown {
+    max-width: 1150px;
+    margin: 40px auto;
+    background-color: #FF6060;
+    display: flex;
+    border-radius: 5px; 
+    width: 80%;   
+    flex-direction: column;
+    
+    .title h1 {
+        text-align: left;
+        margin: 15px;
+        font-size: 18px;
+    }
+
+    .content {
+        background-color: rgb(238, 238, 238);
+     
+        p {
+            color: black;
+            text-align: justify;
+            margin-inline: 16px;
+        }
+    }
+
+
+
+
+
+}
+

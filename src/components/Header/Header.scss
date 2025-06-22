@@ -18,8 +18,13 @@ header {
       margin-right: 50px;
     }
 
-    a {
-      color: black;
+    .nav-link {
+     color: black;
     }
+
+    .nav-link.active {
+      text-decoration: underline;
+    }
+
   }
 }

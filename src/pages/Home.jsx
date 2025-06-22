@@ -1,13 +1,12 @@
 import Banner from '../components/Banner/Banner'
+import imgHome from '../assets/image_home.png'
 import Card from '../components/Card/Card'
 import logements from '../../logements.json'
-
-// Tu importeras ensuite tes données si tu en as (JSON ou API)
 
 function Home() {
   return (
     <div>
-      <Banner />
+      <Banner image={imgHome} alt="Photo de la nature" title="Chez vous, partout et ailleurs"/>
 
       <div className="cards-container">
      {logements.map((logement) => (
