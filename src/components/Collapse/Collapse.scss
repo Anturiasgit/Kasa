@@ -1,4 +1,4 @@
-.dropdown {
+.collapse {
     max-width: 1150px;
     margin: 40px auto;
     background-color: #FF6060;
@@ -38,7 +38,7 @@
         background-color: rgb(238, 238, 238);
      
         &.displayed {
-            max-height: 100px; 
+            max-height: 150px; 
         }
 
 

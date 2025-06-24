@@ -1,7 +1,7 @@
-import './Dropdown.scss';
+import './Collapse.scss';
 import { useState } from 'react';
 
-function Dropdown({title,content}) {
+function Collapse({title,content}) {
     const [rotated, setRotated] = useState(false);
     const [displayed, setDisplayed] = useState(false);
 
@@ -11,10 +11,10 @@ function Dropdown({title,content}) {
     };
 
     return (
-        <div className="dropdown">
+        <div className="collapse">
             <div className="title">
                 <h1>{title}</h1>
-                <img src="/arrow_up.png" alt="Flèche pour le dropdown" 
+                <img src="/arrow_up.png" alt="Flèche" 
                 className={`${rotated ? 'rotated' : ''}`} onClick={handleClick}/>
             </div>
             <div className={`content ${displayed ? 'displayed' : ''}`}>
@@ -24,4 +24,4 @@ function Dropdown({title,content}) {
     )
 }
 
-export default Dropdown
+export default Collapse

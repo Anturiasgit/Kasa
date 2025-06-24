@@ -1,15 +1,15 @@
 import Banner from '../components/Banner/Banner'
 import imgAbout from '../assets/image_about.png'
-import Dropdown from '../components/Dropdown/Dropdown'
-import dropdowns from '../../dropdowns.json'
+import Collapse from '../components/Collapse/Collapse'
+import collapses from '../../collapses.json'
 
 function About() {
   return ( 
     <div>
       <Banner image={imgAbout} alt="Photo d'une montagne"/>
 
-      {dropdowns.map((dropdown) => (
-      <Dropdown title={dropdown.title} content={dropdown.content}/> 
+      {collapses.map((collapse) => (
+      <Collapse title={collapse.title} content={collapse.content}/> 
       ))}
 
     </div>
