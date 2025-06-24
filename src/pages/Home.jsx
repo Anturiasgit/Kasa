@@ -9,7 +9,7 @@ function Home() {
       <Banner image={imgHome} alt="Photo de la nature" title="Chez vous, partout et ailleurs"/>
 
       <div className="cards-container">
-     {getLogements.map((logement) => (
+     {getLogements().map((logement) => (
         <Card key={logement.id} id={logement.id} cover={logement.cover} title={logement.title} />
      ))}
       </div>

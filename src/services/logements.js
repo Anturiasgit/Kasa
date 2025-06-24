@@ -1,4 +1,4 @@
-import logements from '../../logementjs.json'
+import logements from '../../logements.json'
 
 
 export function getLogements(){

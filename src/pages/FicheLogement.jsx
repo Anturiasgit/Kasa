@@ -1,11 +1,10 @@
 import Slideshow from '../components/Slideshow/Slideshow'
 import { useParams } from 'react-router-dom';
 import { getLogementsById } from '../services/logements';
-
+import { Link } from 'react-router-dom';
 
 function FicheLogement() {
     const { id } = useParams();
-
     const logement = getLogementsById(id);
 
     if(!logement) {
