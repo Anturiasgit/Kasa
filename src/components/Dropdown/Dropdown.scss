@@ -7,15 +7,41 @@
     width: 80%;   
     flex-direction: column;
     
-    .title h1 {
-        text-align: left;
-        margin: 15px;
-        font-size: 18px;
-    }
+    .title { 
+        display: flex;
+        justify-content: space-between;
 
+        h1 {
+            text-align: left;
+            margin: 15px;
+            font-size: 18px;
+        }
+
+        img {
+            height: 30px;
+            object-fit: cover;
+            margin-right: 15px;
+            margin-top: 8px;  
+            cursor: pointer;  
+            transition: transform 0.3s ease; 
+
+            &.rotated {
+                transform: rotate(-180deg);
+            }
+        }
+    }
+    
     .content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
         background-color: rgb(238, 238, 238);
      
+        &.displayed {
+            max-height: 100px; 
+        }
+
+
         p {
             color: black;
             text-align: justify;
