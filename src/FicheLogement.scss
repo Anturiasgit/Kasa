@@ -1,0 +1,76 @@
+.fiche-logement {
+
+    .infos {
+        display: flex;
+        width: 91%;
+        margin-inline: auto;
+
+        .title-tags {
+            text-align: left;
+            width: 88%;
+
+
+            #title {
+                color: #FF6060;
+                font-size: 35px;
+                font-weight: normal;
+                margin: 0;
+            }
+
+            #location {
+                color: black;
+                margin-top: 6px;
+                margin-bottom: 15px;
+            }
+
+            #tag {
+                background-color: #FF6060;
+                border: none;
+                margin-right: 10px;
+                padding: 5px 25px;
+                border-radius: 10px;
+                font-family: inherit;
+                font-weight: bold;
+            }
+        }
+
+        .host-ratings {
+            margin-top: -25px;
+
+
+            #host {
+                display: flex;
+
+                #host-name {
+                    color: #FF6060;
+                    font-size: 17.5px;
+                    text-align: right;
+                    margin-right: 8px;
+                }
+
+                #host-picture {
+                    border-radius: 50%;
+                    width: 65px;
+                    height: 65px;
+                    margin-top: 11.8px;
+                }
+
+
+
+            }
+        }
+    }
+
+    .description-equipements {
+            display: flex;
+            width: 91%;
+            margin: 0 auto;
+            justify-content: space-between;
+            gap: 6%;
+            align-items: flex-start;            
+            
+            .collapse {
+                margin-top: 25px;                
+            }
+        }
+}

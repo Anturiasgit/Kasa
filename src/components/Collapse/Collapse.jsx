@@ -18,7 +18,7 @@ function Collapse({title,content}) {
                 className={`${rotated ? 'rotated' : ''}`} onClick={handleClick}/>
             </div>
             <div className={`content ${displayed ? 'displayed' : ''}`}>
-                <p>{content}</p>
+              <p>{content}</p>
             </div>
         </div>
     )
