@@ -6,6 +6,7 @@ import Collapse from '../components/Collapse/Collapse';
 import '../FicheLogement.scss'
 import Ratings from '../components/Ratings/Ratings'
 
+
 function FicheLogement() {
     const { id } = useParams();
     const logement = getLogementsById(id);
@@ -35,8 +36,10 @@ function FicheLogement() {
                 <div id="host">
                 <p id="host-name">{logement.host.name}</p>
                 <img id="host-picture" src={logement.host.picture} alt="Photo du propriétaire" />
-                </div>            
+                </div> 
+                <div className='ratings'>
                 <Ratings rating={parseInt(logement.rating)} />
+                </div>           
                 </div>
              </div>   
    

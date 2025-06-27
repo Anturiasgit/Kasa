@@ -1,8 +1,12 @@
-.stars {
+.ratings {
+        width: max-content;
+        display: flex;
 
-    span {
-        font-size: 20px;
-    }
-
+        .empty-star {
+            height: 26px;
+            width: 26px;
+            margin-top: 5px;
+            margin-left: 3.5px;
+        }
 
 }

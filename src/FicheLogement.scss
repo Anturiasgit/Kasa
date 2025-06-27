@@ -36,16 +36,21 @@
 
         .host-ratings {
             margin-top: -25px;
-
+            width: 12%;
+            position: relative;
 
             #host {
                 display: flex;
+                width: max-content;
+                position: absolute;
+                right: 0;
 
                 #host-name {
                     color: #FF6060;
                     font-size: 17.5px;
                     text-align: right;
                     margin-right: 8px;
+                    width: min-content;
                 }
 
                 #host-picture {
@@ -54,9 +59,12 @@
                     height: 65px;
                     margin-top: 11.8px;
                 }
+            }
 
-
-
+            .ratings {
+                position: absolute;
+                right: 0;
+                top: 45px;                
             }
         }
     }
