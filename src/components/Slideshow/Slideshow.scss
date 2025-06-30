@@ -41,7 +41,26 @@
 .slide-counter {
   position: absolute;
   color: white;
-  border-radius: 10px;
   bottom: 5%;
   left: 50%;
+}
+
+
+@media screen and (max-width: 576px){
+  .slideshow {
+    border-radius: 12.5px;
+    height: 350px;
+    margin-bottom: 15px;
+  }
+
+  .slideshow-image{
+    transform: scale(1);
+    width: 100%;
+    height: 100%;
+  }
+
+  .left-arrow, .right-arrow{
+    font-size: 70px;
+    top: 37%;
+  }
 }

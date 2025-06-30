@@ -82,3 +82,45 @@
             }
         }
 }
+
+
+@media screen and (max-width: 576px){
+    .fiche-logement{
+        .infos{
+            flex-direction: column;
+
+            .title-tags{
+                width: 100%;
+                #title{
+                font-size: 22.5px;
+                width: 80%;
+            }
+
+            #location {
+                margin-block: 10px;
+            }
+            }            
+
+            .host-ratings{
+                position: static;
+                width: 100%;
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+
+
+                #host {
+                    position: relative;
+                    right: auto;
+                }
+
+                .ratings {
+                    position: relative;
+                    right: auto;
+                    top: auto;
+                }
+
+            }
+        }
+    }
+}
