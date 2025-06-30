@@ -10,3 +10,22 @@
         }
 
 }
+
+@media screen and (max-width: 576px) {
+        .ratings {
+           .full-star {
+                margin: 0;
+            }
+
+            .full-star {
+                 height: 25px;
+                width: 25px;
+            }
+
+            .empty-star {
+                margin-top: 3px;
+                height: 19px;
+                width: 19px;
+            }
+        }
+}
