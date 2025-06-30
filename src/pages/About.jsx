@@ -6,7 +6,7 @@ import collapses from '../../collapses.json'
 function About() {
   return ( 
     <div>
-      <Banner image={imgAbout} alt="Photo d'une montagne"/>
+      <Banner className="about-banner" image={imgAbout} alt="Photo d'une montagne"/>
 
       {collapses.map((collapse) => (
       <Collapse title={collapse.title} content={collapse.content}/> 

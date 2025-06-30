@@ -47,10 +47,19 @@
             margin-inline: 16px;
         }
     }
+}
 
 
+@media screen and (max-width: 576px){
+    .collapse {
+        width: 90%;
 
+        .content {
+            &.displayed {
+                max-height: 230px;
+            }
+        }
 
-
+    }
 }
 

@@ -40,19 +40,48 @@
 
 @media screen and (max-width: 576px){
 
+  .home-banner {
+     img {
+        transform: scale(1.9);
+    }    
+  }
+
   .cards-container {
-    // background-color: white;
+    background-color: white;
     display: flex;
     flex-direction: column;
     padding: 0;
     margin-inline: auto;
     width: 90%;
 
-
+    .card {
+      width: 100%;
+    }
   }
 
+  .about-banner {
+      img {
+        transform: scale(1.15);
+    } 
+    .overlay {
+      display: none;
+    }
+  }
 
+  #error-code {
+    font-size: 125px;
+    margin-block: 110px;
+  }
 
+  #error-text {
+    font-size: 22.5px;
+    width: 77%;
+    margin-inline: auto;
+  }
+
+  #linkAccueil {
+    margin-block: 100px;
+  }
 }
 
 

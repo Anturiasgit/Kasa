@@ -6,7 +6,7 @@ import { getLogements } from '../services/logements'
 function Home() {
   return (
     <div>
-      <Banner image={imgHome} alt="Photo de la nature" title="Chez vous, partout et ailleurs"/>
+      <Banner className="home-banner" image={imgHome} alt="Photo de la nature" title="Chez vous, partout et ailleurs"/>
 
       <div className="cards-container">
      {getLogements().map((logement) => (
