@@ -1,10 +1,10 @@
 import Slideshow from '../components/Slideshow/Slideshow'
-import { useParams } from 'react-router-dom';
+import { Route, Routes, useParams } from 'react-router-dom';
 import { getLogementsById } from '../services/logements';
-import { Link } from 'react-router-dom';
 import Collapse from '../components/Collapse/Collapse';
 import '../FicheLogement.scss'
 import Ratings from '../components/Ratings/Ratings'
+import NotFound from './NotFound';
 
 
 function FicheLogement() {
@@ -12,11 +12,10 @@ function FicheLogement() {
     const logement = getLogementsById(id);
 
     if(!logement) {
-        return(
-            <div>
-            <h1>Logement non trouvé</h1>
-            <Link to="/">Retour à l'accueil</Link>
-            </div>
+        return (
+            <Routes>
+            <Route path="*" element={<NotFound />}></Route>                
+            </Routes>
         );
     } else {
          return (
