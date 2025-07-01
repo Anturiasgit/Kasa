@@ -9,7 +9,7 @@ function Ratings({ rating }) {
   for (let i = 0; i < totalStars; i++) {
       stars.push(
       <img src={i < rating ? fullStar : emptyStar}
-      alt={i < rating ? 'étoile pleine' : 'étoile vide'} 
+      alt={i < rating ? `étoile ${i+1} pleine` : `étoile ${i+1} vide`} 
       className={i < rating ? 'full-star' : 'empty-star'}/>);
   }
 
