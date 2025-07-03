@@ -14,3 +14,22 @@ footer {
     font-size: 22.5px;
   }
 }
+
+@media screen and (max-width: 576px){
+  footer {
+
+    img {
+      width: 172px;
+      height: 60px;
+      margin-top: 80px;
+    }
+
+    p {
+      width: 40%;
+      font-size: 19px;
+      margin-inline: auto;
+      margin-bottom: 85px;
+      margin-top: 0;
+    }
+  }
+}
